@@ -1,0 +1,200 @@
+
+                            /* police suplementaire */
+@font-face {
+    font-family: 'Ruda';
+    src: url('police/Ruda/Ruda-VariableFont_wght.ttf');
+}
+
+                            /* general */
+body{
+    font-family: 'Ruda',sans-serif;
+    background-color: #5AAED0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2.5em;
+}
+h3{
+    color: black;
+    font-size: 2em;
+}
+
+                            /* banniere */
+header{
+    background-image: url("image/Banniere2.jpg");
+    background-size: 100%;
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+}
+.QRcode{
+    width: 100%;
+    border-radius: 30px;
+}
+nav{
+    background-color: rgba(100, 100, 100, 0.6);
+    border-radius: 20px;
+    color: chartreuse;
+}
+.lien_menu:visited{
+    color: chartreuse;
+}
+.lien_menu:active{
+    color: rgb(75, 216, 100);
+}
+.lien_menu:hover{
+    color: chocolate;
+}
+.menu_Qcode{
+    width: 15%;
+    /* flexbox */
+    display: flex;
+    flex-direction:column;
+}
+.poste{
+    /* format */
+    border-radius: 30px;
+    font-size: 1.5em;
+    font-family: 'Romanesco',sans-serif;
+    /* flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo{
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+.profil{
+    width: 15%;
+    opacity: 0.92;
+    height: auto;
+    /* flexbox */
+    display: flex;
+    align-items: flex-start;
+}
+                            /* page index */
+
+/* competance */
+.competance{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.soft_skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hard_skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.soft_skills, .hard_skills{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+/* Formation */
+.formations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.informatique{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.industrie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Experience */
+.old_experience{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 2px solid rgba(1, 68, 167, 0.993);
+    margin: 5%;
+    text-align: center; /*centrage du text*/
+    vertical-align: middle; /*alignement text vertical*/
+    padding: 10px;
+}
+caption{
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+}
+
+                            /* page hobby */
+.interet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+iframe{
+    border: solid;
+    width: 560px;
+    height: 315px;
+}
+
+                            /* page contact */
+.main_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+form{
+    margin-top: 10px;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.mail{
+    width: 10%;
+    margin: 30px;
+    height: auto;
+}
+.mail_class{
+    width: 30%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    align-items: center;
+}
+.text_contact{
+    display: flex;
+} 
+legend{
+    text-align: center;
+}
+.ren-perso{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    justify-content: flex-end;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+}

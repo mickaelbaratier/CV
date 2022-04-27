@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Romanesco&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu_Qcode">
+            <img class="QRcode" src="image/QRcode.png" alt="QRcode de contact" title="contact">
+            <nav>
+                <h2>MENU</h2>
+                <ul>
+                    <li><a class="lien_menu" href="index.html">Présentation</a></li>
+                    <li><a class="lien_menu" href="hobby.html">Mes passion</a></li>
+                    <li><a class="lien_menu" href="contact.html">Me contacter</a></li>
+                    <li><a class="lien_menu" href="https://www.google.com">Google</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="poste">
+            <h1>Developeur DEVOPS</h1>
+        </div>
+        <div class="profil">
+            <img class="photo" src="image/photo_profil.jpg" alt="photo_profil" title="photo_profil">
+        </div>
+    </header>
+    <main>
+        <div class="main_contact">
+            <Form class="formulaire_contact" method="POST" action="https://httpbin.org/">
+                <fieldset>
+                    <legend>Type de demande</legend>
+                    <label for="devis">Devis : </label>
+                    <input type="radio" name="devis_demande" id="devis" value="devis">
+                    <label for="demande">demande :</label>
+                    <input type="radio" name="devis_demande" id="demande" value="demande">
+                    <label for="pays">pays : </label>
+                    <select name="pays" id="pays">
+                        <option value="france">france</option>
+                        <option value="belgique">belgique</option>
+                        <option value="suisse" selected>suisse</option>
+                        <option value="almagne">almagne</option>
+                    </select>
+                </fieldset>
+                <fieldset class="ren-perso">
+                    <legend>renseignement personel</legend>
+                    <div class="input">
+                        <label for="nom">Nom</label>
+                        <input type="text" name="nom" id="nom" required>
+                    </div>
+                    <div class="input">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input">
+                        <label for="explication"></label>
+                        <textarea name="explication" id="explication" cols="30" rows="10" placeholder="explication"></textarea>
+                    </div>
+                    <div id="submit">
+                        <button type="submit" value="envoyer"></button>
+                    </div>
+                </fieldset>
+            </Form>
+            <div class="mail_class">
+                <div class="text_contact">Vous pouvez aussi me contacter par mail sur ce logo --></div>
+                <div class="image_contact">
+                    <a href="mailto:mickael.baratier@le-campus-numerique.fr">
+                        <img class="mail" src="image/mail.png" alt="contacte par mail">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
